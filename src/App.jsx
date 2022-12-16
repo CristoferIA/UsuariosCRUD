@@ -67,7 +67,7 @@ const closeDelete = ()=>{
       <div className="App__delete">
         <div>
           <h3>Delete User</h3>
-          <p>The user <span className="nameUser"></span> has been deleted</p>
+          <p>The user <b><span className="nameUser"></span></b> has been deleted</p>
           <button onClick={closeDelete}>to accept</button>
         </div>
       </div>
