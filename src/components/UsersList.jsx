@@ -6,7 +6,7 @@ import axios from "axios";
 
 const UsersList = ({ result, renderContainer, setUpdateInfo, updateUser, form_delete }) => {
   const deleteCard = (obj) => {
-    const name_user= obj.first_name + obj.last_name;
+    const name_user= obj.first_name +" "+ obj.last_name;
     axios
       .delete(`https://users-crud.academlo.tech/users/${obj.id}/`)
       .then(() => {
