@@ -11,7 +11,7 @@ const UsersFrom = ({ renderContainer, closeNewUser }) => {
 
   const submit = (data) => {
     axios
-      .post("http://users-crud.academlo.tech/users/", data)
+      .post("https://users-crud.academlo.tech/users/", data)
       .then(() => {
         renderContainer(true);
         reset({

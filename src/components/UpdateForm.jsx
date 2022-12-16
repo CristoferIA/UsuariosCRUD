@@ -14,7 +14,7 @@ const UpdateForm = ({ updateInfo, renderContainer, closeUpdate }) => {
 
   const submit = (data) => {
     axios
-      .put(`http://users-crud.academlo.tech/users/${data.id}/`, data)
+      .put(`https://users-crud.academlo.tech/users/${data.id}/`, data)
       .then(() => {
         renderContainer(true);
         reset({

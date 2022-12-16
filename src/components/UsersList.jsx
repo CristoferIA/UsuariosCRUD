@@ -8,7 +8,7 @@ const UsersList = ({ result, renderContainer, setUpdateInfo, updateUser, form_de
   const deleteCard = (obj) => {
     const name_user= obj.first_name + obj.last_name;
     axios
-      .delete(`http://users-crud.academlo.tech/users/${obj.id}/`)
+      .delete(`https://users-crud.academlo.tech/users/${obj.id}/`)
       .then(() => {
         form_delete(name_user)
         renderContainer(true);
