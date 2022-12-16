@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://users-crud.academlo.tech/users/")
+      .get("https://users-crud.academlo.tech/users/")
       .then((res) => {
         setResult(res.data);
         renderContainer(false);
